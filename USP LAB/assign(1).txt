@@ -1,0 +1,33 @@
+
+a. Write a program which takes a command with arguments on the command line and executes it.
+   ./mypgm  ls -l -i
+   this should execute the ls cmd.
+   hint: experiment with execvp call
+
+b. while(1)
+   {
+	int pid  = fork();
+        if(pid < 0)
+        {
+             perror("fork"); exit(1);
+        }	
+        else if(pid)
+        {
+            printf("I am the parent\n");
+        }
+        else
+        {
+            printf("I am the child\n");
+        }
+   }
+   Please do not execute this code.
+   What happens if this program is executed?
+
+
+c. experiment with environmental variable. create an environmental 
+   variable. fork and check whether the variable is available in
+   both the parent and the child. Change in the child and check whether
+   the variable has changed in the parent. Now change in the parent
+   and check whether the variable has changed in the child.
+   What do you conclude?
+

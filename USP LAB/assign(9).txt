@@ -1,0 +1,18 @@
+1. create a message queue with the following message structure.
+   char cmd[5];
+   int val;
+   cmd takes strings sqr or cube.
+   Server receives the messages into input msg queue from    multiple clients.
+   Based on the cmd, server squares or cubes the value in 
+   val and sends the message through an output msg queue.
+   Each client should receive his message.
+   
+2. What happens if the message queue is removed
+a)   when the queue contains # of messages
+b)   when the client is waiting to read a message
+     create a sender of msg and create a receiver of msg
+     a) send some msgs and remove the message queue and see what happens
+     b) send some msgs ; make the receiver wait on a type of message
+        not in the queue; remove the message queue and see what happens
+
+ 

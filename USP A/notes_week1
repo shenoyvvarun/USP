@@ -1,0 +1,113 @@
+
+file types:
+- : regular file
+d : directory
+b : device drivers block
+c : device drivers character
+l : symbolically linked file
+s : socket
+p : named pipe
+D : only solaris
+
+every user will normally have an entry in /etc/passwd
+username:x or password encrypted:user id:group id:doc string:home directory:login shell
+
+users belong to groups
+/etc/groups
+
+file permissions:
+r
+w
+x
+t
+s : set effective user
+    only for binary execucatable files
+    user running this pgm will become as powerful as the owner of the file
+when we create a file, the permissions depend on the umask
+file : 666 ^ ~umask
+use chmod to modify the permissions
+
+ln : creates another name for the same file
+a) ease of use: a file can be made to occur in mutliple directories
+b)  diff outputs for the same cmd
+c) porting : use the same name for a software even if the version changes
+
+three time stamps:
+access time : read the file
+modification time : modify the file content
+change time : modify the file attribute
+
+ln :
+cannot link across the file system
+cannot link directories
+
+
+system call:
+request to the kernel
+executes in the kernel mode
+user pgm cannot directlya access what is the kernel mode
+context switch from the user mode to the kernel mode and
+	back again
+function called system is different
+system call looks like a normal fn in most of the languages
+gives a minimal interface
+all output fns in turn call the system call write
+
+system call could fail:
+----------------------------------------------------------
+
+file system:
+first char in the first field of the output of ls -l cmd:
+file types:
+-   : regular file
+d   : directory
+c   : character oriented device drivers
+b   : block oriented device drivers
+l   : symbolic link
+s   : socket
+p   : named pipe
+
+every user will have an entry in /etc/passwd
+username:x or password encrypted:uid:gid:doc str:home directory:login shell
+
+file permissions:
+r w x -
+t : sticky
+s : set user bit (effective user)
+    any user running a pgm with set user bit will have the permission
+    of the owner of the file - becomes effectively the owner
+
+initial permission depends on umask
+use chmod to change the permissions
+
+ln : link
+a) ease of use : file can exist in diff directories
+b) same binary may have diff names resulting in diff outputs
+c) porting
+
+cannot be used on directories
+cannot be used across the file system
+
+
+
+// unix system programming
+// 
+ 
+// system call : interface to the kernel
+//		 supported in most of the languages
+//			in the form of a fn call
+//		 request for the OS to satisfy some requirement
+//		 give a minimal interface
+//		 low level routines
+//		 could fail
+//		 if it fails, it normally returns 0 on success
+//			and negative number on failure
+//		
+
+
+
+
+
+
+
+

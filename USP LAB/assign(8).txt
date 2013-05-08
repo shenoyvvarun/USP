@@ -1,0 +1,17 @@
+1. Generate a pattern of numbers as in snake and ladder board. Let the parent generate the odd lines (counting the first line as  1) and the child generate the even lines. Use SIGUSR1 to synchronize and pause to wait for a signal. You may have to make the process sleep before sending the signal so that pause is not
+reached before the signal is sent.
+
+2. Experiment on exec as to what happens to signal pending.
+   is it pending in the called process? is it delivered to the called 
+   process if signal blocking is removed?
+   create the caller:
+       block a signal
+       send the signal
+       exec the "called" process
+   create the called:
+       check the pending state
+       find the current blocking
+       delete the signal being blocked
+
+
+

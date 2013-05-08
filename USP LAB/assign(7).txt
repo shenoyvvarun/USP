@@ -1,0 +1,21 @@
+1. Write a program to combine the streams stdout and stderr into a single file.
+
+void foo()
+{
+	write(1, "this goes to stdout\n", 20);
+	write(2, "this goes to stderr\n", 20);
+	write(1, "abcdefghijklmnopqrs\n", 20);
+	write(2, "ABCDEFGHIJKLMNOPQRS\n", 20);
+ 
+} 
+
+2. Experiment signals on fork and exec.
+   timer
+      setup a timer - setup handler for the timer - fork (or exec) - check
+      who gets the timer signal
+
+3. implement client - server communication using pipes.
+   client sends a string
+   server makes the first char uppercase and sends it back
+   hint: require two pipes
+ 

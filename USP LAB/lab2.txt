@@ -1,0 +1,17 @@
+lab 2:
+a) experiment with open system call.
+   i) create a file with name x2 with permissions rw-rw-r--.
+   ii) if the file exists, do not recreate. give a message and exit
+b) experiment with lseek system call
+   i) open an existing file in read-write mode
+   ii) seek before the beginning of file and test what happens
+   iii) seek beyond the end of file, check the offset, close the file
+        and exit and check the file size
+   iv) seek beyond the end of file, write a few bytes, close the file,
+       check the file size
+c) write a program to display a file in reverse.
+   if the file contains
+   abcdefgh
+   then
+   display hgfedcba
+

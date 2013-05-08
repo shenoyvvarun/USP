@@ -1,0 +1,5 @@
+a) What happens if we open a symbolic link and read the file?
+b) How to read the content of symbolic link?
+c) Write a program to remove all empty files in the current directory.
+
+   

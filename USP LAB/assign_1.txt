@@ -1,0 +1,57 @@
+what happens on cp cmd?
+    if the dst exists and src does not?
+    does umask affect the copying?
+    what are the differences bet copying to a new file and copying
+         to an existing file?
+    does the directory permission matter?
+    what will be the permissions of the dst file on copying?
+    what happens if we copy a hard linked file?
+    what happens if we copy a symbolically linked file?
+can we mv a file to itself?
+can we mv if the dst exists?
+can we mv a symbolically linked file?
+can we hard link a symbolically linked file?
+can we symbolically link a symbolically linked file?
+can we rm a symbolically linked file?
+what can x permission on directory?
+what permission does a directory get by default?
+what is the least number of links in a regular file and in a directory?
+When does the number of links of a directory increase?
+what does touch cmd on an existing file?
+why do we require modification time?
+why do we require changed time?
+what is impersonation? 
+what does rm cmd do? remove a file or remove a filename?
+Given an inode, can we find the number of names the file has? can we find
+     them?
+what does directory contain?
+can we directly edit directory entries?
+what happens if we create a named pipe using mkfifo cmd and cat the file?
+what does ls -a display?
+	what are . and .. in the directory?
+        why do we require them?
+can a user be part of more than one group?
+what is journal file system? why is that required?
+when does set user bit and set group come into picture?
+how is the permission checked if a user is part of more than one group?
+
+
+------------
+not part of the course:
+experiment with * and ?
+ls *
+ls ?
+ls ??
+ls a*
+ls *a
+
+
+
+
+
+
+
+     
+
+
+	

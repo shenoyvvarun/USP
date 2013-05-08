@@ -1,0 +1,20 @@
+1. implement a chat server
+2. implement using sockets tic-tac-toe game
+3. implememt data structures in shared memory
+4. simulate block allocation in a file
+5. simulate the directory structure
+6. simulate the inode structure
+7. develop a file system which tracks time in nanosecond
+8. develop a file system which tracks the creation time
+9. compare two source trees
+10. undelete a file
+11. implement a small shell
+12. encapsulate block and unblocking of signals
+13. Implement sorting on shared memory using fork
+14. Implement sorting on shared memory using fork
+15. implement producer - consumer using pipes
+16. implement a make utility
+17. implement version control utility
+18. implement multiple timer
+19. implement grep utility
+20. 

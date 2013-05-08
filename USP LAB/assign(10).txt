@@ -1,0 +1,7 @@
+1. create a share memory segment. Attach to a process. Then fork and create a new child. Examine what happens to the # of attaches. Make the parent write a strng in the shared memory. make the child change this string to uppercase. Make the parent display the changed string.
+
+2. create a shared memory segment. Write a program to populate the memory
+   with 100 random numbers each between 1 and 1000. Write another program
+   to find the average, the biggest and the smallest numbers in the array.
+
+

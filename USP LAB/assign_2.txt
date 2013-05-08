@@ -1,0 +1,23 @@
+1. when all does umask come into picture?
+   does it affect creat, open system calls?
+2. write a program to simulate rm cmd.
+   usage: myrm a b c
+   if a file cannot be removed, this command should give a reasonable
+   message and proceed further.
+3. Write a program to simulate cat cmd.
+   mycat a b c
+4. write a program to simulate cp cmd.
+   mycopy src dst
+5. write a program to create a symbolic link.
+   Programmatically read what the symbolic linked file contains.
+6. Write a program to create a file of a particular size.
+7. Write a program to check whether a given file has a particular
+   string at a particular location.
+   check whether a given file is a java class file.
+8. How to do the following?
+   a) truncate a file
+   b) create a file with all permissions enabled
+      cannot change umask using the command umask!
+   c) break a file into n files
+   d) combine n files to a single file
+   

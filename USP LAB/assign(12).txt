@@ -1,0 +1,6 @@
+Socket
+1. create echo server. Client sends a request string. Server resends it back - but change first letter of each word to uppercase.
+
+a) Support a single client 
+b) Support multiple clients using forking server
+c) Support multiple clients using multiplexing server

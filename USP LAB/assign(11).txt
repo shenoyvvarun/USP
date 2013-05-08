@@ -1,0 +1,14 @@
+semaphore:
+1. Implement a barrier using a counting semaphore.
+   Parent process creates n child processes - avoids zombie by
+   explicitly setting the disposition to SIG_IGN.
+   - blocks on a semaphore by doing a p operation in a loop executed n times.
+   each child at the end does a v operation at the end.
+   When all the children complete execution, parent continues.
+
+2. Experiment with IPC_NOWAIT. Make a process execute a p operation which
+   would normally block.
+
+3. Check whether otime is changed if the semop is blocked.
+
+   

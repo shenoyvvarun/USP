@@ -1,0 +1,37 @@
+----------
+Prgms for USP Lab-1
+ 
+P1a. Experiment with set user bit.
+    create your executable and data file in /tmp so that others can also
+    access.
+    (For user1)
+     a) open a file (x.dat/txt) for appending.
+     b) Read a String
+     c) Append to the file
+     d) Close the file
+ 
+Requirement:-
+    a) remove write permission for others
+    b) ask user2 to execute the program
+    c) add set user bit  ( Change permission of program)
+    d) ask user2 to run the program
+ 
+----------------------------------------------------------------------------------------------------------------------------------------------
+P1b.Mimic ls-l command using stat system call Or Simulate stat command
+ 
+struct stat s ;
+ 
+stat("filename", &s);
+ 
+a) s.st_inode// get inode number
+b)s.st_node//get node
+c)s.st_size// get size
+d)s.st_nlink//get link number
+ 
+requirement : display the following:-
+a) file name
+b)file type
+c)file permission
+d)size
+e)inode #
+f) timestamp 

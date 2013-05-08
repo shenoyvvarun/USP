@@ -1,0 +1,35 @@
+4
+a)
+	find the output of this program. Convince yourself and your teacher about it!
+How many processes are created in this snippet?
+int main()
+{
+   fork();
+   fork() && fork () || fork ();
+   fork ();
+   printf("fool\n");
+   return 0;
+}
+b)
+	what happens in this program if you are the running the program
+        in the following ways?
+#include <stdio.h>
+#include <unistd.h>
+#include <stdlib.h>
+int main()
+{
+        printf("abcd\n");
+        fork(); // assume successful forking!
+        printf("pqrs\n");
+        return 0;
+}
+   i) run the pgm as it is
+   ii) remove the new line in the first printf and try it
+   iii) re-introduce the new line in the first printf and run the pgm
+        as  ./pgm >out
+        check what is stored in the file out
+
+c) 
+Write a program in which the parent displays uppercase chars A -Z and child displays lowercase chars a-z with a delay on max of 2 seconds bet each character.
+Run the program repeatedly and see if there is racing.
+
