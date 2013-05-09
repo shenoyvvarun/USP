@@ -1,0 +1,7 @@
+# some commands
+# 1. head
+# 2. tail
+# 3. sed
+# 4. tr (trasliterator)
+
+

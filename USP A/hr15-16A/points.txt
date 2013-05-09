@@ -1,0 +1,13 @@
+shell:
+supports background jobs
+cmd&
+gives the pid
+might give a job number
+
+process:
+in a hierarchy
+
+create a new  process:
+	delegate work
+	execute a new cmd
+

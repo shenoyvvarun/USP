@@ -1,0 +1,60 @@
+shell:
+command interpreter
+supports environment
+variables
+output
+input
+language
+	assignment
+	looping
+	selection
+	...
+compare:
+test
+	options:
+	-eq
+functions
+
+positional parameters or command line args
+$1 $2 ...
+$0 : command name
+all of them:
+$*
+use shift to remove the leftmost element
+# of them
+$#
+- create
+	set command
+	command line args
+	function call
+
+if ...
+then
+	...
+	...
+else
+	...
+	...
+fi
+
+strings:
+double quotes: variable is substituted
+single quotes : variable is not substituted
+back quotes: output of the command is captured
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

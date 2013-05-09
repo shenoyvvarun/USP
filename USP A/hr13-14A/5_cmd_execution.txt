@@ -1,0 +1,28 @@
+how is cmd executed in unix?
+1. alias
+2. user defined fn
+3. shell builtin or internal cmds of the shell
+4. external cmd
+	is always a file
+	a) locate
+		if no / in the cmd
+		i) use PATH variable to locate
+		else
+		ii) use the name as it is (relative path)
+	b) execute
+	require execute permission
+	a) image obtained by build process
+		fork and exec
+	b) text file
+		requires a translator
+		check the first line
+		#! <path of a binary : pgm>
+		executes the pgm and gives file as input to it
+		if no hash-bang line,
+			execute under a default shell
+
+ps : process status
+
+
+
+

@@ -1,0 +1,37 @@
+redirection:
+is a shell feature
+output redirection
+
+# stdout is redirected
+cmd >file
+# redirection of stderr
+cmd 2>file
+combine two streams
+cmd >file 2>&1
+
+make the output disappear
+cmd >/dev/null 2>&1
+
+append:
+cmd >>file
+
+input redirection:
+cmd <file
+
+here document
+cmd <<str
+:.
+str
+
+
+
+
+
+
+
+
+
+
+
+
+

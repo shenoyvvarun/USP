@@ -1,0 +1,41 @@
+// communicate across systems
+// rpc : remote procedure call
+// TLI : Transport layer interface : OSI model
+// socket : BSD ...
+// 	an end point of communication
+
+// server
+//	create an unnamed socket
+//	- address family 
+//	- type of communication
+//	- protocol
+//	binding : combine the ip of the machine with a logical number
+//	associates an unnamed socket with a service
+//	create a queue for the clients to wait
+//		create listeners
+
+//	server waits for the client(accept)
+// client
+//	
+//	create an unnamed socket
+//	- address family 
+//	- type of communication
+//	- protocol
+//	connect to the server - specify the computer and port number
+//	
+// server:
+//	creates a client socket on the server side
+
+// there is a bidirectional path established bet the client and the 
+//	server
+// both can send and recv info
+
+
+
+
+
+
+
+
+
+
